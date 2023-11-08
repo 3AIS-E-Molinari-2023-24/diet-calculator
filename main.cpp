@@ -1,12 +1,13 @@
 #include <QApplication>
-#include "widgets/inputwidget.h"
+#include <QObject>
+#include "widgets/mainwindow.h"
 
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    InputWidget input;
-    input.show();
+    MainWindow mainWindow;
+    mainWindow.show();
 
     return app.exec();
 }
